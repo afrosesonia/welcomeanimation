@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+span {
+
+    background: url("https://cdn1.iconfinder.com/data/icons/christmas-flat-4/58/020_-_Star-512.png");
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: welcomeanimation 5s linear;
+}
+
+@keyframes welcomeanimation {
+    0% {
+
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+
+    100% {
+
+        transform: translate(-50%, -50000%);
+        opacity: 0;
+        filter: hue-rotate(720degree);
+    }
+
+}
